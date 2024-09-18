@@ -1,0 +1,123 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte atualizada */
+    background-color: #dadada; /* Fundo cinza claro */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px;
+    border: 1px solid #bbbbbb; /* Borda cinza claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333; /* Cinza escuro */
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"] {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda cinza claro */
+    border-radius: 5px; /* Borda arredondada */
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    border-color: #008fa8; /* Borda azul ao focar */
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px 20px;
+    background-color: #008fa8; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+button:hover {
+    background-color: #006779; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilo da lista de produtos no carrinho */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+li {
+    background-color: #fff; /* Fundo branco */
+    color: #000000; /* Texto preto */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0; /* Borda cinza claro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo do botão de remover produto */
+.remove-btn {
+    background-color: transparent;
+    border: none;
+    color: #da1e31; /* Vermelho */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s; /* Transição suave para o hover */
+}
+
+.remove-btn:hover {
+    color: #b60e1f; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container, form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .remove-btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}

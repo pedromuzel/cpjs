@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Carrinho de Compras</title>
+</head>
+
+<body>
+    <ul id="lista-produtos"></ul>
+    <h3>PRODUTOS DISPONÍVEIS</h3>
+    <div>
+        <p>ID: 1</p>
+        <p>Nome: Camiseta</p>
+        <p>Valor: R$29.99</p>
+        <p>Quantidade: 2</p>
+        <button onclick="adicionarProduto(1, 'Camiseta', 29.99, 2)">Adicionar ao Carrinho</button>
+    </div>
+    <div>
+        <p>ID: 2</p>
+        <p>Nome: Calça Jeans</p>
+        <p>Valor: R$99.90</p>
+        <p>Quantidade: 1</p>
+        <button onclick="adicionarProduto(2, 'Calça Jeans', 99.90, 1)">Adicionar ao Carrinho</button>
+    </div>
+    <div>
+        <p>ID: 3</p>
+        <p>Nome: Tênis</p>
+        <p>Valor: R$149.90</p>
+        <p>Quantidade: 1</p>
+        <button onclick="adicionarProduto(3, 'Tênis', 149.90, 1)">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Aqui fizemos uma forma diferente para adicionar um produto novo -->
+    <h3>Adicionar Produto Personalizado</h3>
+    <form id="form-produto">
+        <label>ID: <input type="number" id="produto-id" required></label><br>
+        <label>Nome: <input type="text" id="produto-nome" required></label><br>
+        <label>Valor: <input type="number" id="produto-valor" step="0.01" required></label><br>
+        <label>Quantidade: <input type="number" id="produto-quantidade" required></label><br>
+        <button type="submit">Adicionar Produto Personalizado</button>
+    </form>
+
+    <script src="atividade2.js"></script>
+</body>
+
+</html>
